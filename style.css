@@ -2,5 +2,56 @@ body {
     font-size: 16px;
     font-family: 'Manrope', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 254);
+    background-color: white;
+    color: rgb(22, 37, 37);
+}
+
+main {
+    margin: 2rem;
+    line-height: 1.5;
+    background-color: white;
+}
+
+nav {
+    font-size: 14px;
+    color: lightslategray;
+    text-align: center;
+}
+
+nav li:hover {
+    color: black;
+}
+
+.nav-name {
+    padding-top: .55rem;
+    font-size: 1em;
+    font-weight: bolder;
+    color: darkslategray;
+    text-align: center; 
+}
+
+footer {
+    font-size: 14px;
+    color: lightslategray;
+}
+
+.tagline {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom:3em;
+}
+
+.tagline h1 {
+    font-size: 30px;
+}
+
+.tagline h2 {
+    font-size: 20px;
+    color: lightslategray;
+}
+
+button.resume {
+    margin-top: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
