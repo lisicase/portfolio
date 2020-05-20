@@ -4,7 +4,7 @@ a {
 
 body {
     font-size: 16px;
-    font-family: 'Manrope', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Muli', 'Manrope', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     box-sizing: border-box;
     background-color: white;
     color: rgb(22, 37, 37);
@@ -104,6 +104,20 @@ div.contents-table {
 
 .affiliation a {
     color: black;
+}
+
+div.card {
+    /*box-shadow: 0 1px 3px rgb(192, 192, 192);*/
+    border-radius: 0;
+    border: 0;
+}
+
+img {
+    border-radius: 0%;
+}
+
+.card-title {
+    font-weight: 900;
 }
 
 @media (min-width: 598px) {
