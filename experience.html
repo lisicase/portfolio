@@ -18,7 +18,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="nav-link" href="experience.html"><h1 class="nav-name">ELISABETH (LISI) CASE</h1></a>
+            <a class="nav-link" href="portfolio.html"><h1 class="nav-name">ELISABETH (LISI) CASE</h1></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa fa-bars"></i></span>
@@ -26,10 +26,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="experience.html">Experience<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link" href="experience.html">Experience<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -39,19 +39,8 @@
         </nav>
     </header>
     <main>
-        <div class="tagline">
-            <h1>Hey there! I'm Lisi :)</h1>
-            <h2>Currently TAing for UW CSE and seeking PM/SWE internships.</h2>
-            <div>
-                <button type="button" onclick="location.href='documents/ElisabethCase-PM.pdf'"
-                class="resume add-new btn btn-light btn-sm">Resume - PM</button>
-                <button type="button" onclick="location.href='documents/ElisabethCase-SWE.pdf'"
-                class="resume add-new btn btn-light btn-sm">Resume - SWE</button>
-            </div>
-        </div>
-
-        <div class="content-column">
-            <nav>
+        <div class="col nav-column">
+            <nav class="contents-table">
                 <ul>
                   <li><a href="#education-list">Education</a></li>
                   <li><a href="#experience-list">Experience</a></li>
@@ -60,56 +49,125 @@
                   <li><a href="#awards-list">Awards</a></li>
                 </ul>
             </nav>
-            <nav>
-                
-            </nav>
+        </div>
+        <div class="col content-column">
+            <!--<nav class="contents-table">
+                <ul>
+                  <li><a href="#education-list">Education</a></li>
+                  <li><a href="#experience-list">Experience</a></li>
+                  <li><a href="#projects-list">Projects</a></li>
+                  <li><a href="#activities-list">Activities</a></li>
+                  <li><a href="#awards-list">Awards</a></li>
+                </ul>
+            </nav>-->
             <ul id="education-list" class="list-group list-group-flush">
                 <h3>Education</h3>
                 <li class="list-group-item">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="position">Position</h5>
-                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                        <h5 class="position">Expected B.S. in Informatics</h5>
+                        <p class="timeframe">Sep. 2017 – Jun. 2022</p>
                     </div>
-                    <p class="employer">Employer</p>
-                    <p class="description">Description</p>
+                    <p class="employer">University of Washington - Seattle</p>
+                    <ul class="description">
+                        <li>Interdisciplinary Honors Program</li>
+                        <li>Dean’s List; 3.81 GPA</li>
+                        <li>UW Academy Student at the Robinson Center for Young Scholars:
+                            early admission to UW at age 16</li>
+                    </ul>
                 </li>
             </ul>
             <ul id="experience-list" class="list-group list-group-flush">
                 <h3>Experience</h3>
                 <li class="list-group-item">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="position">Position</h5>
-                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                        <h5 class="position">Teaching Assistant</h5>
+                        <p class="time-frame">Sept. 2019 – Present</p>
                     </div>
-                    <p class="employer">Employer</p>
-                    <p class="description">Description</p>
+                    <p class="employer">UW Computer Science & Engineering</p>
+                    <ul class="description">
+                        <li>Teaches 20+ students introductory coding fundamentals in Java,
+                            resulting in students’ ability to write their own classes</li>
+                        <li>Gives individual assistance/feedback via office hours and grading</li>
+                    </ul>
                 </li>
                 <li class="list-group-item">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="position">Position</h5>
-                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                        <h5 class="position">Director of Finance</h5>
+                        <p class="time-frame">Oct. 2018 – Apr. 2020</p>
                     </div>
-                    <p class="employer">Employer</p>
-                    <p class="description">Description</p>
+                    <p class="employer">HuskyTech</p>
+                    <ul class="description">
+                        <li>Led team in developing budgets to effectively plan events with
+                            sponsors, helping over 350 students transition into tech careers</li>
+                        <li>Launched programs such as the Mentorship Program, connecting
+                            over 100 students to 60 mentors from 25+ companies</li>
+                    </ul>
                 </li>
                 <li class="list-group-item">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="position">Position</h5>
-                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                        <h5 class="position">Research Assistant</h5>
+                        <p class="time-frame">Jun. 2019 – Sep. 2019</p>
                     </div>
-                    <p class="employer">Employer</p>
-                    <p class="description">Description</p>
+                    <p class="employer">UW Electrical & Computer Engineering</p>
+                    <ul class="description">
+                        <li>Worked with Astrini Sie of Rombolabs to design a smart wearable
+                            device, “Smart Step,” to help people descend stairs easily and
+                            intuitively</li>
+                        <li>Collected, cleaned, and analyzed kinetics/kinematics data, allowing
+                            us to predict foot placement and investigate effects of haptic cue
+                            timing</li>
+                    </ul>
                 </li>
             </ul>
             <ul id="projects-list" class="list-group list-group-flush">
                 <h3>Projects</h3>
                 <li class="list-group-item">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="position">Position</h5>
-                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                        <h5 class="position">Project Manager</h5>
+                        <p class="time-frame">Apr. 2020 – Present</p>
                     </div>
-                    <p class="employer">Employer</p>
-                    <p class="description">Description</p>
+                    <p class="employer">INFO 380 (Systems Analysis & Design)</p>
+                    <ul class="description">
+                        <li>Leads team in designing a centralized resource for college applicants</li>
+                        <li>Designs project; interviews stakeholders; develops proof of concept</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Web Developer</h5>
+                        <p class="time-frame">Apr. 2020 – Present</p>
+                    </div>
+                    <p class="employer">INFO 340 (Client-Side Development)</p>
+                    <ul class="description">
+                        <li>Designs and develops dynamic web app for users to sign in, browse
+                            books, log reading, create lists, set goals, and view statistics</li>
+                        <li>Utilizes Google Books API and user-entered data</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Front-End Software Developer</h5>
+                        <p class="time-frame">Jul. 2019 – Aug. 2019</p>
+                    </div>
+                    <p class="employer">INFO 360 (Design Methods)</p>
+                    <ul class="description">
+                        <li>Developed software for a campus map mobile website under a grant from
+                            the UW Resilience Lab</li>
+                        <li>Set the foundations to guide students through restorative paths and
+                            practices</li>
+                        <li>Collaborated to research, ideate, prototype, and evaluate designs</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Project Manager</h5>
+                        <p class="time-frame">Oct. 2018 – Dec. 2018</p>
+                    </div>
+                    <p class="employer">INFO 200 (Informatics Foundations)</p>
+                    <ul class="description">
+                        <li>Led team in designing an app to help university students better
+                            connect with events, organizations, and other students on campus</li>
+                    </ul>
                 </li>
             </ul>
             <ul id="activities-list" class="list-group list-group-flush">
@@ -120,7 +178,89 @@
                         <p class="time-frame">Mon. 00 – Mon. 00</p>
                     </div>
                     <p class="employer">Employer</p>
-                    <p class="description">Description</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Position</h5>
+                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                    </div>
+                    <p class="employer">Employer</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Position</h5>
+                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                    </div>
+                    <p class="employer">Employer</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Position</h5>
+                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                    </div>
+                    <p class="employer">Employer</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Position</h5>
+                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                    </div>
+                    <p class="employer">Employer</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Position</h5>
+                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                    </div>
+                    <p class="employer">Employer</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Position</h5>
+                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                    </div>
+                    <p class="employer">Employer</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Position</h5>
+                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                    </div>
+                    <p class="employer">Employer</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="position">Position</h5>
+                        <p class="time-frame">Mon. 00 – Mon. 00</p>
+                    </div>
+                    <p class="employer">Employer</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
                 </li>
             </ul>
             <ul id="awards-list" class="list-group list-group-flush">
@@ -131,7 +271,9 @@
                         <p class="time-frame">Mon. 00 – Mon. 00</p>
                     </div>
                     <p class="employer">Employer</p>
-                    <p class="description">Description</p>
+                    <ul class="description">
+                        <li>Description</li>
+                    </ul>
                 </li>
             </ul>
         </div>

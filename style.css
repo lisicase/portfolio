@@ -1,3 +1,7 @@
+a {
+    color: #A9B0FF;
+}
+
 body {
     font-size: 16px;
     font-family: 'Manrope', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -59,11 +63,34 @@ button.resume {
 i.contact.fa {
     padding-left: .5rem;
     padding-right: .5rem;
-    color: lightslategray;
+    color: #A9B0FF;
 }
 
 p.time-frame {
     font-size: 16px;
+}
+
+ul {
+    line-height: 1.15;
+}
+
+ul ul {
+    line-height: 2;
+}
+
+ul h3 {
+    color: #A9B0FF;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+h5.position {
+    font-weight: bold;
+}
+
+nav.contents-table li {
+    list-style: none;
+    text-align: left;
 }
 
 @media (min-width: 598px) {
@@ -75,15 +102,13 @@ p.time-frame {
 
 @media (min-width: 768px) {
     div.content-column {
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
-}
-
-@media (min-width: 850px) {
-    div.content-column {
-        padding-left: 5rem;
-        padding-right: 5rem;
+    nav.contents-table {
+        position: fixed;
+        left: 0;
+        font-size: 16px;
     }
 }
 
