@@ -76,6 +76,12 @@ ul {
 
 ul ul {
     line-height: 2;
+    color: rgb(76, 87, 98);
+    padding-bottom: 2em;
+}
+
+.description a {
+    color: rgb(76, 87, 98);
 }
 
 ul h3 {
@@ -84,13 +90,20 @@ ul h3 {
     padding-bottom: 0;
 }
 
+.time-frame {
+    color: rgb(158, 171, 184);
+}
+
 h5.position {
     font-weight: bold;
 }
 
-nav.contents-table li {
-    list-style: none;
-    text-align: left;
+div.contents-table {
+    line-height: 1.5rem;
+}
+
+.affiliation a {
+    color: black;
 }
 
 @media (min-width: 598px) {
@@ -105,11 +118,9 @@ nav.contents-table li {
         padding-left: 8rem;
         padding-right: 8rem;
     }
-    nav.contents-table {
+    /*div.contents-table {
         position: fixed;
-        left: 0;
-        font-size: 16px;
-    }
+    }*/
 }
 
 
