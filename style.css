@@ -55,3 +55,42 @@ button.resume {
     margin-left: .5rem;
     margin-right: .5rem;
 }
+
+i.contact.fa {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    color: lightslategray;
+}
+
+p.time-frame {
+    font-size: 16px;
+}
+
+@media (min-width: 598px) {
+    div.content-column {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    div.content-column {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 850px) {
+    div.content-column {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    div.content-column {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+}
