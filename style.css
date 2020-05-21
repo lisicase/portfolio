@@ -70,10 +70,6 @@ p.time-frame {
     font-size: 16px;
 }
 
-ul {
-    line-height: 1.15;
-}
-
 ul ul {
     line-height: 2;
     color: rgb(76, 87, 98);
@@ -114,6 +110,15 @@ div.card {
 
 img {
     border-radius: 0%;
+}
+
+.profile-photo {
+    max-width: 400px;
+    padding-bottom: 2rem;
+}
+
+h2.subtitle {
+    font-size: 16pt;
 }
 
 .card-title {
