@@ -1,5 +1,6 @@
 "use strict";
 
+/*https://getbootstrap.com/docs/4.0/components/carousel/*/
 let carousel = document.querySelector("carousel");
 if (carousel != null) {
     let nextBtn = document.querySelector("a.carousel-control-next");
