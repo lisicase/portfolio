@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <Footer />
     </div>
   );
 }
@@ -26,6 +27,23 @@ class NavBar extends Component {
           </Nav>
         </Navbar>
       </header>
+    );
+  }
+}
+
+class Footer extends Component {
+  render() {
+    return (
+      <footer>
+        <div class="container text-center">
+            <p>
+              <a href="mailto:casee@uw.edu"><i class="contact fa fa-envelope-square fa-2x"></i></a>
+              <a href="https://linkedin.com/in/elisabethcase"><i class="contact fa fa-linkedin-square fa-2x"></i></a>
+              <a href="https://github.com/lisicase"><i class="contact fa fa-github-square fa-2x"></i></a>
+            </p>
+            <p>Copyright &copy; 2020. All rights reserved.</p>
+        </div>
+      </footer>
     );
   }
 }
