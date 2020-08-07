@@ -73,9 +73,10 @@ button.resume {
     margin-right: .5rem;
 }
 
-i.contact.fa {
+.contact-icon {
     padding-left: .5rem;
     padding-right: .5rem;
+    font-size: 10px;
     color: #A9B0FF;
 }
 
