@@ -26,20 +26,23 @@ main {
     background-color: white;
 }
 
-nav {
+Navbar {
+    background-color: white;
+}
+
+Nav {
     font-size: 14px;
     color: lightslategray;
     text-align: center;
 }
 
-nav li:hover {
+Nav li:hover {
     color: black;
 }
 
 .nav-name {
     padding-top: .55rem;
-    font-size: 1em;
-    font-weight: bolder;
+    font-size: 16px;
     color: darkslategray;
     text-align: center; 
 }
