@@ -76,7 +76,7 @@ button.resume {
 .contact-icon {
     padding-left: .5rem;
     padding-right: .5rem;
-    font-size: 10px;
+    box-sizing: content-box;
     color: #A9B0FF;
 }
 
