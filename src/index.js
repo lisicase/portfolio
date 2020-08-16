@@ -4,10 +4,11 @@ import {BrowserRouter} from 'react-router-dom';
 import './style.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import PORTFOLIO_DATA from './data/portfolio-projects.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter><App /></BrowserRouter>
+    <BrowserRouter><App projects={PORTFOLIO_DATA} /></BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

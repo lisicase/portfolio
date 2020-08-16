@@ -1,38 +1,35 @@
 // React
 import React, { Component } from 'react';
-import { Route, Switch, Redirect, NavLink } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 // Style
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 // Components
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import PortfolioCards from './PortfolioCards.js';
 import { FaEnvelopeSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
+class App extends Component {
+  render() {
+    let renderPortfolio = (props) => <PortfolioCards {...props} projects={this.props.projects} />
 
-function App() {
-  return (
-    <div className="App">
+    return (
+      <>
       <NavBar />
       <Switch>
-        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/portfolio" render={renderPortfolio} />
         <Route path="/experience" component={Experience} />
         <Route path="/about" component={About} />
         <Route path="/portfolio/:projectId" component={Project} />
         <Redirect to="/portfolio" />
-    </Switch>
+      </Switch>
       <Footer />
-    </div>
-  );
-}
-
-class Portfolio extends Component {
-  render() {
-    return (
-      <p>Portfolio</p>
+      </>
     );
   }
 }
+
 class Experience extends Component {
   render() {
     return (
@@ -76,7 +73,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <div class="container text-center">
+        <div className="container text-center">
             <p>
               <a href="mailto:casee@uw.edu"><FaEnvelopeSquare className="contact-icon" size="24" /></a>
               <a href="https://linkedin.com/in/elisabethcase"><FaLinkedin className="contact-icon" size="24" /></a>

@@ -1,0 +1,51 @@
+[
+  { 
+    "id": 0, "title": "Chronicle", "context": "INFO 340 (Client-Side Development)", 
+    "description": "Collaborated to design and develop a dynamic web app that enables users to sign in, browse books, log reading, and create lists.", 
+    "project": "",
+    "tools": "HTML, CSS, JavaScript, React, Firebase",
+    "img_src": ""
+  },
+  { 
+    "id": 1, "title": "CollegeHub", "context": "INFO 380 (Systems Analysis & Design)", 
+    "description": "Led team in designing a centralized resource for college applicants and ultimately developed proof of concept (on left).", 
+    "project": "Stakeholder Interviews, Use Cases, Deployment Diagram, Workflow Diagram, Data Dictionary, Permissions Matrix, Product Backlog, User Stories",
+    "tools": "Figma, Apex Oracle",
+    "img_src": ""
+  },
+  { 
+    "id": 2, "title": "Smart Step", "context": "Rombolabs at UW Electrical & Computer Engineering", 
+    "description": "Worked with Astrini Sie of Rombolabs to design a smart wearable device to help people who have difficulty walking, particularly elderly and disabled people, descend stairs easily and intuitively.", 
+    "project": "",
+    "tools": "MATLAB, Qualisys",
+    "img_src": ""
+  },
+  { 
+    "id": 3, "title": "UW Breathe", "context": "INFO 360 (Design Methods)", 
+    "description": "Created foundations for a campus map mobile website under a grant from the UW Resilience Lab. Collaborated to research, design, and develop software prototype.", 
+    "project": "", 
+    "tools": "HTML, CSS",
+    "img_src": ""
+  },
+  { 
+    "id": 4, "title": "USA Education Funding", "context": "INFO 201 (Technical Foundations of Informatics)", 
+    "description": "Created a web app of interactive infographics using school funding data from USA censuses.", 
+    "project": "", 
+    "tools": "R, Shiny",
+    "img_src": ""
+  },
+  { 
+    "id": 5, "title": "HuskyConnect", "context": "INFO 200 (Intellectual Foundations of Informatics)", 
+    "description": "Collaborated to design and develop an interactive prototype for an app geared toward helping first-year university students better transition to UW by connecting with events, organizations, and other students on campus.", 
+    "project": "", 
+    "tools": "Figma",
+    "img_src": ""
+  },
+  { 
+    "id": 6, "title": "Native American Mascots", "context": "AIS 202 (American Indian Contemporary and Social Issues)", 
+    "description": "[description]", 
+    "project": "", 
+    "tools": "",
+    "img_src": ""
+  }
+]
