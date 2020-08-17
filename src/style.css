@@ -35,6 +35,20 @@ h6.subtitle {
     font-size: 18px;
 }
 
+h3.project-page {
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+h1.project-page {
+    font-size: 30pt;
+}
+
+h2.project-page {
+    font-size: 18pt;
+    margin-bottom: 1em;
+}
+
 main {
     margin: 2rem;
     line-height: 1.5;

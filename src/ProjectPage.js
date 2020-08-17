@@ -22,7 +22,7 @@ class ProjectPage extends Component {
 
   render() {
     let project = this.state.project;
-    if(!project) return <div className="flex-container"><p><strong>No project specified.</strong></p></div>;
+    if(!project) return <div className="flex-container"><p>No project specified.</p></div>;
 
     return (
       <div className="flex-container">
@@ -50,8 +50,8 @@ class Header extends Component {
 
     return (
       <header>
-        <h2>{this.props.title}</h2>
-        <h5 class="subtitle">{this.props.context} | {this.props.timeframe}</h5>
+        <h1 class="project-page">{this.props.title}</h1>
+        <h2 className="subtitle project-page">{this.props.context} | {this.props.timeframe}</h2>
         {project}
         {tools}
       </header>
@@ -63,7 +63,7 @@ class Summary extends Component {
   render() {
     return (
       <>
-      <h3>Summary</h3>
+      <h3 class="project-page">Summary</h3>
       <div id="flex-left-right">
         <div id="flex-left">
           <img src={this.props.img} alt={this.props.alt} />
@@ -83,7 +83,7 @@ class Reflection extends Component {
   render() {
     return (
       <>
-      <h3>Reflection</h3>
+      <h3 class="project-page">Reflection</h3>
       <p className="card-text">This is a bunch of defaalksdlfkj asdkjflk wijib skjdkjgs q a dija wlekjs skdjlkja sdfjiv s. sdjgksj als.s djlsjlg a.</p>
       </>
     );
