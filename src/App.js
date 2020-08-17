@@ -8,11 +8,12 @@ import './style.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import PortfolioCards from './PortfolioCards.js';
+import Tagline from './Tagline.js';
 import { FaEnvelopeSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 class App extends Component {
   render() {
-    let renderPortfolio = (props) => <PortfolioCards {...props} projects={this.props.projects} />
+    let renderPortfolio = (props) => <><Tagline/><PortfolioCards {...props} projects={this.props.projects} /></>
 
     return (
       <>
@@ -57,7 +58,7 @@ class NavBar extends Component {
     return (
       <header>
         <Navbar>
-          <Navbar.Brand href="portfolio"><h1 className="nav-name">ELISABETH (LISI) CASE</h1></Navbar.Brand>
+          <Navbar.Brand href="/"><h1 className="nav-name">ELISABETH (LISI) CASE</h1></Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="portfolio">Portfolio</Nav.Link>
             <Nav.Link href="experience">Experience</Nav.Link>

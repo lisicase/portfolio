@@ -1,5 +1,6 @@
 // React
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 // Style
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
@@ -18,7 +19,7 @@ class AllPortfolioCards extends Component {
   render() {
     let allProjects = this.props.projects.map((project) => {
       return <span key={project.id}>
-        <PortfolioCard title={project.title} context={project.context} description={project.description} 
+        <PortfolioCard id={project.id} title={project.title} context={project.context} description={project.description} 
         project={project.project} tools={project.tools} img={project.img_src} alt={project.alt} />
         </span>
     })
@@ -32,7 +33,22 @@ class AllPortfolioCards extends Component {
 }
 
 class PortfolioCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  handleClick = () => {
+    this.setState({ redirectTo: this.props.id });
+  }
+
   render() {
+    // Redirect to project page
+    if (this.state.redirectTo) {
+      return <Redirect push to={"/portfolio/" + this.state.redirectTo} />
+    }
+
+    // Render project card
     let project = <span></span>;
     if (this.props.project !== "") {
       project = <p className="card-text"><strong>Project: </strong>{this.props.project}</p>;
@@ -53,7 +69,7 @@ class PortfolioCard extends Component {
               <h6 className="subtitle">{this.props.context}</h6>
               {project}
               {tools}
-              <a href="#" className="btn btn-light">Learn more</a>
+              <button onClick={this.handleClick} className="btn btn-light">Learn more</button>
             </div>
           </div>
         </div>

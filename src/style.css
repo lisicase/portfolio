@@ -84,7 +84,7 @@ footer {
     color: lightslategray;
 }
 
-button.resume {
+a.resume {
     margin-top: 1rem;
     margin-left: .5rem;
     margin-right: .5rem;
