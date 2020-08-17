@@ -21,12 +21,74 @@ class ProjectPage extends Component {
   }
 
   render() {
+    let project = this.state.project;
+    if(!project) return <div className="flex-container"><p><strong>No project specified.</strong></p></div>;
+
     return (
       <div className="flex-container">
-        <p>Project</p>
+        <div className="col content-column" style={{alignItems:"center"}}>
+          <Header title={project.title} context={project.context} timeframe={project.timeframe} 
+          project={project.project} tools={project.tools} />
+          <Summary img={project.img_src} alt={project.alt} summary={project.summary} />
+          <Reflection reflection={project.reflection} />
+        </div>
       </div>
     );
   }
 }
+
+class Header extends Component {
+  render() {
+    let project = <span></span>;
+    if (this.props.project !== "") {
+      project = <p className="card-text"><strong>Project: </strong>{this.props.project}</p>;
+    }
+    let tools = <span></span>;
+    if (this.props.tools !== "") {
+      tools = <p className="card-text"><strong>Tools: </strong>{this.props.tools}</p>;
+    }
+
+    return (
+      <header>
+        <h2>{this.props.title}</h2>
+        <h5 class="subtitle">{this.props.context} | {this.props.timeframe}</h5>
+        {project}
+        {tools}
+      </header>
+    );
+  }
+}
+
+class Summary extends Component {
+  render() {
+    return (
+      <>
+      <h3>Summary</h3>
+      <div id="flex-left-right">
+        <div id="flex-left">
+          <img src={this.props.img} alt={this.props.alt} />
+        </div>
+        <div id="flex-right">
+          <div className="card-body">
+            <p className="card-text">This is a bunch of defaalksdlfkj asdkjflk wijib skjdkjgs q a dija wlekjs skdjlkja sdfjiv s. sdjgksj als.s djlsjlg a.</p>
+          </div>
+        </div>
+      </div>
+      </>
+    );
+  }
+}
+
+class Reflection extends Component {
+  render() {
+    return (
+      <>
+      <h3>Reflection</h3>
+      <p className="card-text">This is a bunch of defaalksdlfkj asdkjflk wijib skjdkjgs q a dija wlekjs skdjlkja sdfjiv s. sdjgksj als.s djlsjlg a.</p>
+      </>
+    );
+  }
+}
+
 
 export default ProjectPage;
