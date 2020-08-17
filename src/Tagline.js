@@ -12,10 +12,10 @@ class Tagline extends Component {
   render() {
     return (
       <div className="tagline">
-            <h1>Hey there! I'm Lisi :)</h1>
-            <h2>Informatics student at UW seeking PM/SWE internships.</h2>
-            <Resumes />
-        </div>
+        <h1>Hey there! I'm Lisi :)</h1>
+        <h2 className="subtitle">Informatics senior at UW seeking PM/SWE internships for summer 2021.</h2>
+        <Resumes />
+      </div>
     );
   }
 }

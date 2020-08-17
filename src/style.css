@@ -77,11 +77,12 @@ footer {
 
 .tagline h1 {
     font-size: 30px;
+    font-weight: 10;
 }
 
 .tagline h2 {
     font-size: 20px;
-    color: lightslategray;
+    font-weight: 10;
 }
 
 a.resume {
@@ -153,8 +154,12 @@ img {
     padding-bottom: 2rem;
 }
 
-h2.subtitle {
+h6.subtitle {
     font-size: 16pt;
+}
+
+.subtitle {
+    color: lightslategray;
 }
 
 .card-title {
