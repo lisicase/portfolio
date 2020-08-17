@@ -33,21 +33,21 @@ class App extends Component {
 class Experience extends Component {
   render() {
     return (
-      <p>Experience</p>
+      <p>My Experience page is currently in progress. Thank you for your patience! :)</p>
     );
   }
 }
 class About extends Component {
   render() {
     return (
-      <p>About</p>
+      <p>My About page is currently in progress. Thank you for your patience! :)</p>
     );
   }
 }
 class Project extends Component {
   render() {
     return (
-      <p>Project</p>
+      <p>My Project page is currently in progress. Thank you for your patience! :)</p>
     );
   }
 }

@@ -65,6 +65,8 @@ Nav li:hover {
 footer {
     font-size: 14px;
     color: lightslategray;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .tagline {
@@ -160,51 +162,71 @@ h2.subtitle {
     font-size: 24px;
 }
 
-div.content-column {
-    padding-left: 0rem;
-    padding-right: 0rem;
-    min-width: 100rem;
-}
-
 .cardImg {
     width: 25vw;
     height: 25vw;
 }
 
+div.content-column {
+    width: 98rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
 .shadow.card {
-    width: 50vw;
+    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 598px) {
-    /*div.content-column {
+    div.content-column {
+        width: 98rem;
         padding-left: 1rem;
         padding-right: 1rem;
-    }*/
+    }
 }
 
 @media (min-width: 768px) {
-    /*div.content-column {
+    div.content-column {
+        width: 90rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 864px) {
+    div.content-column {
+        width: 80rem;
         padding-left: 10rem;
         padding-right: 10rem;
-    }*/
-    /*div.contents-table {
-        position: fixed;
-    }*/
+    }
 }
 
 @media (min-width: 1024px) {
-    /*div.content-column {
-        width: 40rem;
-        padding-left: 30rem;
-        padding-right: 30rem;
+    div.content-column {
+        width: 72rem;
+        padding-left: 14rem;
+        padding-right: 14rem;
     }
+}
+
+@media (min-width: 1280px) {
     div.content-column {
-        align-self: center;
-    }*/
+        width: 60rem;
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+}
+
+@media (min-width: 1440px) {
     div.content-column {
-        display: 'flex';
-        justify-content: 'space-between';
-        width: 40rem;
+        width: 50rem;
+        padding-left: 25rem;
+        padding-right: 25rem;
     }
 }
 
@@ -224,7 +246,7 @@ div.content-column {
     justify-content: center;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 597px) {
     #flex-left-right {
         flex-direction: column;
         padding: 25px;
