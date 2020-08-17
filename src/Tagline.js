@@ -1,6 +1,5 @@
 // React
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
 // Style
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
@@ -24,8 +23,10 @@ class Resumes extends Component {
   render() {
     return (
       <div>
-        <a href={ResumePM} target = "_blank" type="button" className="resume btn btn-light btn-sm">Resume - PM</a>
-        <a href={ResumeSWE} target = "_blank" type="button" className="resume btn btn-light btn-sm">Resume - SWE</a>
+        <a href={ResumePM} target = "_blank" rel="noopener noreferrer" type="button" 
+        className="resume btn btn-light btn-sm">Resume - PM</a>
+        <a href={ResumeSWE} target = "_blank" rel="noopener noreferrer" type="button" 
+        className="resume btn btn-light btn-sm">Resume - SWE</a>
       </div>
     );
   }

@@ -67,6 +67,7 @@ class PortfolioCard extends Component {
             <div className="card-body">
               <h5 className="card-title">{this.props.title}</h5>
               <h6 className="subtitle">{this.props.context}</h6>
+              <p className="card-text">{this.props.description}</p>
               {project}
               {tools}
               <button onClick={this.handleClick} className="btn btn-light">Learn more</button>

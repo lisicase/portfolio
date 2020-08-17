@@ -9,11 +9,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import PortfolioCards from './PortfolioCards.js';
 import Tagline from './Tagline.js';
+import ProjectPage from './ProjectPage.js';
+// Assets
 import { FaEnvelopeSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 class App extends Component {
   render() {
     let renderPortfolio = (props) => <><Tagline/><PortfolioCards {...props} projects={this.props.projects} /></>
+    let renderProject = (props) => <ProjectPage {...props} projects={this.props.projects} />
 
     return (
       <>
@@ -22,7 +25,7 @@ class App extends Component {
         <Route exact path="/portfolio" render={renderPortfolio} />
         <Route path="/experience" component={Experience} />
         <Route path="/about" component={About} />
-        <Route path="/portfolio/:projectId" component={Project} />
+        <Route path="/portfolio/:projectId" render={renderProject} />
         <Redirect to="/portfolio" />
       </Switch>
       <Footer />
@@ -42,13 +45,6 @@ class About extends Component {
   render() {
     return (
       <p>My About page is currently in progress. Thank you for your patience! :)</p>
-    );
-  }
-}
-class Project extends Component {
-  render() {
-    return (
-      <p>My Project page is currently in progress. Thank you for your patience! :)</p>
     );
   }
 }
