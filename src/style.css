@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap');
 
-a {
-    color: #A9B0FF;
+a.external-link {
+    color: #A9B0FF !important;
 }
 
 @font-face {
@@ -35,16 +35,16 @@ h6.subtitle {
     font-size: 18px;
 }
 
-h3.project-page {
+h3.page-section {
     padding-top: 1.5em;
     padding-bottom: 0.5em;
 }
 
-h1.project-page {
+h1.page-title {
     font-size: 30pt;
 }
 
-h2.project-page {
+h2.page-title {
     font-size: 18pt;
     margin-bottom: 1em;
 }

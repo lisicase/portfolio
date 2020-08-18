@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 // Style
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 // Assets
 
@@ -50,8 +49,8 @@ class Header extends Component {
 
     return (
       <header>
-        <h1 class="project-page">{this.props.title}</h1>
-        <h2 className="subtitle project-page">{this.props.context} | {this.props.timeframe}</h2>
+        <h1 className="page-title">{this.props.title}</h1>
+        <h2 className="subtitle page">{this.props.context} | {this.props.timeframe}</h2>
         {project}
         {tools}
       </header>
@@ -63,14 +62,22 @@ class Summary extends Component {
   render() {
     return (
       <>
-      <h3 class="project-page">Summary</h3>
+      <h3 className="page-section">Summary</h3>
       <div id="flex-left-right">
         <div id="flex-left">
           <img src={this.props.img} alt={this.props.alt} />
         </div>
         <div id="flex-right">
           <div className="card-body">
-            <p className="card-text">This is a bunch of defaalksdlfkj asdkjflk wijib skjdkjgs q a dija wlekjs skdjlkja sdfjiv s. sdjgksj als.s djlsjlg a.</p>
+            <p className="card-text">In this project, I...</p>
+            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius nisi urna,
+             a consectetur tortor elementum vitae. Aenean in iaculis nulla. Suspendisse id tempus tellus. Suspendisse eleifend 
+             posuere lorem at scelerisque. Aliquam erat volutpat. Cras ultricies urna a nunc tincidunt, a laoreet ligula tincidunt. 
+             Curabitur tristique euismod lacus a egestas. Vivamus nulla tellus, molestie ut diam ut, porttitor tempor mauris. 
+             Proin a lacinia dolor, quis efficitur urna. Ut non ultricies lacus. Nullam sodales risus ipsum, 
+             congue luctus neque pellentesque non.</p>
+            <p className="card-text">Pellentesque bibendum quis ante ut sodales. Curabitur hendrerit ullamcorper nibh. Praesent ac felis at nulla 
+              varius elementum quis sed sem. Phasellus justo ex, viverra non varius a, porta sed nunc. Pellentesque bibendum molestie mauris.</p>
           </div>
         </div>
       </div>
@@ -83,8 +90,16 @@ class Reflection extends Component {
   render() {
     return (
       <>
-      <h3 class="project-page">Reflection</h3>
-      <p className="card-text">This is a bunch of defaalksdlfkj asdkjflk wijib skjdkjgs q a dija wlekjs skdjlkja sdfjiv s. sdjgksj als.s djlsjlg a.</p>
+      <h3 className="page-section">Reflection</h3>
+      <p className="card-text">I learned...</p>
+      <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius nisi urna,
+        a consectetur tortor elementum vitae. Aenean in iaculis nulla. Suspendisse id tempus tellus. Suspendisse eleifend 
+        posuere lorem at scelerisque. Aliquam erat volutpat. Cras ultricies urna a nunc tincidunt, a laoreet ligula tincidunt. 
+        Curabitur tristique euismod lacus a egestas. Vivamus nulla tellus, molestie ut diam ut, porttitor tempor mauris. 
+        Proin a lacinia dolor, quis efficitur urna. Ut non ultricies lacus. Nullam sodales risus ipsum, 
+        congue luctus neque pellentesque non.</p>
+      <p className="card-text">Pellentesque bibendum quis ante ut sodales. Curabitur hendrerit ullamcorper nibh. Praesent ac felis at nulla 
+        varius elementum quis sed sem. Phasellus justo ex, viverra non varius a, porta sed nunc. Pellentesque bibendum molestie mauris.</p>
       </>
     );
   }

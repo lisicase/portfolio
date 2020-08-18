@@ -10,6 +10,7 @@ import Nav from 'react-bootstrap/Nav';
 import PortfolioCards from './PortfolioCards.js';
 import Tagline from './Tagline.js';
 import ProjectPage from './ProjectPage.js';
+import About from './About.js';
 // Assets
 import { FaEnvelopeSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
@@ -38,13 +39,6 @@ class Experience extends Component {
   render() {
     return (
       <p>My Experience page is currently in progress. Thank you for your patience! :)</p>
-    );
-  }
-}
-class About extends Component {
-  render() {
-    return (
-      <p>My About page is currently in progress. Thank you for your patience! :)</p>
     );
   }
 }
