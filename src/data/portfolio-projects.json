@@ -52,14 +52,5 @@
     "tools": "Figma",
     "img_src": "/img/huskyconnect/cover.JPEG",
     "alt": "Screen captures of the DubsTech club information and details for their Student Showcase event"
-  },
-  { 
-    "id": "mascots", "title": "Native American Mascots", 
-    "context": "AIS 202 (American Indian Contemporary and Social Issues)", "timeframe": "Jan 2018 – Mar 2018",
-    "description": "[description]", 
-    "project": "", 
-    "tools": "",
-    "img_src": "/img/namascot/cover4.JPG",
-    "alt": "Word cloud of survey responses"
   }
 ]
