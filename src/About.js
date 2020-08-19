@@ -34,9 +34,10 @@ class Summary extends Component {
     return (
       <>
       <h3 className="page-section">Summary</h3>
-      <p className="card-text">I'm a senior undergraduate student at the University of Washington studying Informatics and Interdisciplinary Honors,
-      and an aspiring Project Manager / Software Engineer. I care about using information and designing products in creative and intuitive ways to 
-      help people achieve their goals and accomplish positive change.</p>
+      <p className="card-text">I’m a senior Interdisciplinary Honors student majoring in Informatics at UW Seattle, 
+      experienced in managing projects and programs in collaboration with various stakeholders to optimize user experience. 
+      I enjoy working in teams to analyze data, ideate, and build products in creative and intuitive ways to help people 
+      achieve their goals and accomplish positive change, particularly related to health, education, and accessibility.</p>
       </>
     );
   }

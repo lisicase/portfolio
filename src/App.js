@@ -24,8 +24,11 @@ class App extends Component {
       <NavBar />
       <Switch>
         <Route exact path="/portfolio" render={renderPortfolio} />
+        <Route exact path="/portfolio/portfolio" render={renderPortfolio} />
         <Route path="/experience" component={Experience} />
+        <Route path="/portfolio/experience" component={Experience} />
         <Route path="/about" component={About} />
+        <Route path="/portfolio/about" component={About} />
         <Route path="/portfolio/:projectId" render={renderProject} />
         <Redirect to="/portfolio" />
       </Switch>
