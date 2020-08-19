@@ -1,0 +1,271 @@
+/*@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap');*/
+
+a.external-link {
+    color: #A9B0FF !important;
+}
+
+/*@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mulish/v1/1Ptvg83HX_SGhgqk0QotYKNnBcif.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}*/
+
+body {
+    font-size: 16px;
+    /*font-family: 'Mulish', 'Manrope', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    background-color: white;
+    color: rgb(22, 37, 37);
+}
+
+.subtitle {
+    color: rgb(126, 132, 140);
+    /*color: lightslategray;*/
+    font-weight: semibold;
+    margin-bottom: 1em;
+}
+
+.card-body > .subtitle {
+    font-size: 20px;
+}
+
+h3.page-section {
+    padding-top: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+h1.page-title {
+    font-weight: normal;
+}
+
+h2.page-title {
+    margin-bottom: 1em;
+    font-weight: normal;
+}
+
+main {
+    margin: 2rem;
+    line-height: 1.5;
+    background-color: white;
+}
+
+Navbar {
+    background-color: white;
+}
+
+Nav {
+    font-size: 14px;
+    /*color: lightslategray;*/
+    color: rgb(126, 132, 140);
+    text-align: center;
+}
+
+Nav li:hover {
+    color: black;
+}
+
+.nav-name {
+    padding-top: .55rem;
+    font-size: 16px;
+    color: darkslategray;
+    text-align: center; 
+}
+
+footer {
+    font-size: 14px;
+    /*color: lightslategray;*/
+    color: rgb(126, 132, 140);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tagline {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.tagline h1 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.tagline h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+a.resume {
+    margin-top: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.contact-icon {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    box-sizing: content-box;
+    color: #A9B0FF;
+}
+
+p.time-frame {
+    font-size: 16px;
+}
+
+ul ul {
+    line-height: 2;
+    color: rgb(76, 87, 98);
+    padding-bottom: 2em;
+}
+
+.description a {
+    color: rgb(76, 87, 98);
+}
+
+ul h3 {
+    color: #A9B0FF;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.time-frame {
+    color: rgb(158, 171, 184);
+}
+
+h5.position {
+    font-weight: bold;
+}
+
+div.contents-table {
+    line-height: 1.5rem;
+}
+
+.affiliation a {
+    color: black;
+}
+
+div.card {
+    /*box-shadow: 0 1px 3px rgb(192, 192, 192);*/
+    border-radius: 0;
+    border: 0;
+}
+
+img {
+    border-radius: 0%;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1;
+}
+
+.profile-photo {
+    max-width: 400px;
+    padding-bottom: 2rem;
+}
+
+h6.subtitle {
+    font-size: 16pt;
+}
+
+.card-title {
+    font-weight: semibold;
+    font-size: 24px;
+}
+
+.cardImg {
+    width: 25vw;
+    height: 25vw;
+}
+
+div.content-column {
+    width: 98rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.shadow.card {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    div.content-column {
+        width: 98rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 864px) {
+    div.content-column {
+        width: 90rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    div.content-column {
+        width: 80rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    div.content-column {
+        width: 60rem;
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    div.content-column {
+        width: 50rem;
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+}
+
+#flex-left-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+  
+#flex-left > img {
+    max-width: 100%;
+}
+
+#flex-left, #flex-right {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width: 767px) {
+    #flex-left-right {
+        flex-direction: column;
+        padding: 25px;
+    }
+}
+
+img.profile-photo {
+    margin-top: 1.5rem;
+}
