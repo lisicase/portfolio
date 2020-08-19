@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import './style.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -8,7 +8,7 @@ import PORTFOLIO_DATA from './data/portfolio-projects.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter><App projects={PORTFOLIO_DATA} /></BrowserRouter>
+    <HashRouter><App projects={PORTFOLIO_DATA} /></HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

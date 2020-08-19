@@ -51,11 +51,11 @@ class NavBar extends Component {
     return (
       <header>
         <Navbar>
-          <Navbar.Brand href="/"><h1 className="nav-name">ELISABETH (LISI) CASE</h1></Navbar.Brand>
+          <Navbar.Brand href="#/"><h1 className="nav-name">ELISABETH (LISI) CASE</h1></Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="experience">Experience</Nav.Link>
-            <Nav.Link href="about">About</Nav.Link>
+            <Nav.Link href="#/portfolio">Portfolio</Nav.Link>
+            <Nav.Link href="#/experience">Experience</Nav.Link>
+            <Nav.Link href="#/about">About</Nav.Link>
           </Nav>
         </Navbar>
       </header>
