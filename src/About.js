@@ -10,7 +10,7 @@ class About extends Component {
         <div className="col content-column" style={{alignItems:"center"}}>
           <div id="flex-left-right">
             <div id="flex-left">
-              <img className="profile-photo" src="/img/lisi-case.jpeg" alt={"Headshot of Lisi"} style={{paddingTop:"0em"}} />
+              <img src="/img/lisi-case.jpeg" alt={"Headshot of Lisi"} style={{paddingTop:"0em"}} />
             </div>
             <div id="flex-right">
               <div className="card-body">

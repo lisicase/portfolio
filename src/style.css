@@ -1,27 +1,25 @@
-/*@import url('https://fonts.googleapis.com/css?family=Muli');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap');
 
 a.external-link {
     color: #A9B0FF !important;
 }
 
-/*@font-face {
+@font-face {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 300;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/mulish/v1/1Ptvg83HX_SGhgqk0QotYKNnBcif.woff2) format('woff2');
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}*/
+}
 
 body {
     font-size: 16px;
     /*font-family: 'Mulish', 'Manrope', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;*/
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;*/
+    font-weight: 20;
     box-sizing: border-box;
     background-color: white;
     color: rgb(22, 37, 37);
@@ -29,27 +27,26 @@ body {
 
 .subtitle {
     color: rgb(126, 132, 140);
-    /*color: lightslategray;*/
-    font-weight: semibold;
+    font-weight: 40;
     margin-bottom: 1em;
 }
 
-.card-body > .subtitle {
-    font-size: 20px;
+h6.subtitle {
+    font-size: 18px;
 }
 
 h3.page-section {
-    padding-top: 1.2em;
+    padding-top: 1.5em;
     padding-bottom: 0.5em;
 }
 
 h1.page-title {
-    font-weight: normal;
+    font-size: 30pt;
 }
 
 h2.page-title {
+    font-size: 18pt;
     margin-bottom: 1em;
-    font-weight: normal;
 }
 
 main {
@@ -64,8 +61,7 @@ Navbar {
 
 Nav {
     font-size: 14px;
-    /*color: lightslategray;*/
-    color: rgb(126, 132, 140);
+    color: lightslategray;
     text-align: center;
 }
 
@@ -82,8 +78,7 @@ Nav li:hover {
 
 footer {
     font-size: 14px;
-    /*color: lightslategray;*/
-    color: rgb(126, 132, 140);
+    color: lightslategray;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -91,17 +86,17 @@ footer {
 .tagline {
     text-align: center;
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom:3em;
 }
 
 .tagline h1 {
-    font-size: 2rem;
-    font-weight: normal;
+    font-size: 30px;
+    font-weight: 10;
 }
 
 .tagline h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
+    font-size: 20px;
+    font-weight: 10;
 }
 
 a.resume {
@@ -177,8 +172,12 @@ h6.subtitle {
     font-size: 16pt;
 }
 
+.subtitle {
+    color: lightslategray;
+}
+
 .card-title {
-    font-weight: semibold;
+    font-weight: 40;
     font-size: 24px;
 }
 
@@ -245,7 +244,6 @@ div.content-column {
 #flex-left-right {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
 }
   
 #flex-left > img {
@@ -264,8 +262,4 @@ div.content-column {
         flex-direction: column;
         padding: 25px;
     }
-}
-
-img.profile-photo {
-    margin-top: 1.5rem;
 }

@@ -50,7 +50,7 @@ class Header extends Component {
     return (
       <header>
         <h1 className="page-title">{this.props.title}</h1>
-        <h2 className="subtitle page-title page">{this.props.context} | {this.props.timeframe}</h2>
+        <h2 className="subtitle page">{this.props.context} | {this.props.timeframe}</h2>
         {project}
         {tools}
       </header>

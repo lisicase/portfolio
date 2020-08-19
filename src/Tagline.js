@@ -12,7 +12,7 @@ class Tagline extends Component {
     return (
       <div className="tagline">
         <h1>Hey there! I'm Lisi :)</h1>
-        <h2 className="subtitle">Informatics senior at UW seeking PM/SWE internships for summer 2021</h2>
+        <h2 className="subtitle">Informatics senior at UW seeking PM/SWE internships for summer 2021.</h2>
         <Resumes />
       </div>
     );
@@ -23,12 +23,10 @@ class Resumes extends Component {
   render() {
     return (
       <div>
-        <a href={ResumePM} target = "_blank" rel="noopener noreferrer" className="resume">
-          <button className="resume btn btn-light btn-md">Resume - PM</button>
-        </a>
-        <a href={ResumeSWE} target = "_blank" rel="noopener noreferrer" className="resume">
-          <button className="resume btn btn-light btn-md">Resume - SWE</button>
-        </a>
+        <a href={ResumePM} target = "_blank" rel="noopener noreferrer" type="button" 
+        className="resume btn btn-light btn-sm">Resume - PM</a>
+        <a href={ResumeSWE} target = "_blank" rel="noopener noreferrer" type="button" 
+        className="resume btn btn-light btn-sm">Resume - SWE</a>
       </div>
     );
   }
