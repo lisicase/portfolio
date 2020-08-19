@@ -4,15 +4,15 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 // Assets
-import ResumePM from './documents/ElisabethCase-PM.pdf';
-import ResumeSWE from './documents/ElisabethCase-SWE.pdf';
+import ResumePM from './documents/ElisabethCase-PM-Resume.pdf';
+import ResumeSWE from './documents/ElisabethCase-SWE-Resume.pdf';
 
 class Tagline extends Component {
   render() {
     return (
       <div className="tagline">
         <h1>Hey there! I'm Lisi :)</h1>
-        <h2 className="subtitle">Informatics senior at UW seeking PM/SWE internships for summer 2021.</h2>
+        <h2 className="subtitle">Informatics senior at UW seeking PM/SWE internships for summer 2021</h2>
         <Resumes />
       </div>
     );
