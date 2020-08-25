@@ -34,13 +34,14 @@ body {
     margin-bottom: 1em;
 }
 
-.card-body > .subtitle {
-    font-size: 20px;
+main {
+    margin: 2rem;
+    line-height: 1.5;
+    background-color: white;
 }
 
-h3.page-section {
-    padding-top: 1.2em;
-    padding-bottom: 0.5em;
+img {
+    border-radius: 0%;
 }
 
 h1.page-title {
@@ -52,11 +53,16 @@ h2.page-title {
     font-weight: normal;
 }
 
-main {
-    margin: 2rem;
-    line-height: 1.5;
-    background-color: white;
+h3.page-section {
+    padding-top: 1.2em;
+    padding-bottom: 0.5em;
 }
+
+h6.subtitle {
+    font-size: 16pt;
+}
+
+/* NAVIGATION */
 
 Navbar {
     background-color: white;
@@ -80,6 +86,8 @@ Nav li:hover {
     text-align: center; 
 }
 
+/* FOOTER */
+
 footer {
     font-size: 14px;
     /*color: lightslategray;*/
@@ -87,6 +95,15 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+.contact-icon {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    box-sizing: content-box;
+    color: #A9B0FF;
+}
+
+/* TAGLINE */
 
 .tagline {
     text-align: center;
@@ -110,11 +127,11 @@ a.resume {
     margin-right: .5rem;
 }
 
-.contact-icon {
-    padding-left: .5rem;
-    padding-right: .5rem;
-    box-sizing: content-box;
-    color: #A9B0FF;
+/* PORTFOLIO */
+
+div.card {
+    border-radius: 0;
+    border: 0;
 }
 
 p.time-frame {
@@ -141,40 +158,25 @@ ul h3 {
     color: rgb(158, 171, 184);
 }
 
+.affiliation a {
+    color: black;
+}
+
 h5.position {
     font-weight: bold;
+}
+
+.card-body > .subtitle {
+    font-size: 20px;
 }
 
 div.contents-table {
     line-height: 1.5rem;
 }
 
-.affiliation a {
-    color: black;
-}
-
-div.card {
-    /*box-shadow: 0 1px 3px rgb(192, 192, 192);*/
-    border-radius: 0;
-    border: 0;
-}
-
-img {
-    border-radius: 0%;
-}
-
 .card-horizontal {
     display: flex;
     flex: 1 1;
-}
-
-.profile-photo {
-    max-width: 400px;
-    padding-bottom: 2rem;
-}
-
-h6.subtitle {
-    font-size: 16pt;
 }
 
 .card-title {
@@ -187,19 +189,24 @@ h6.subtitle {
     height: 25vw;
 }
 
+.shadow.card {
+    margin-bottom: 1.5rem;
+}
+
+/* ABOUT */
+
+.profile-photo {
+    max-width: 400px;
+    padding-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* COLUMN FORMAT */
+
 div.content-column {
     width: 98rem;
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-}
-
-.shadow.card {
-    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -242,6 +249,13 @@ div.content-column {
     }
 }
 
+/* FLEXBOX */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
 #flex-left-right {
     display: flex;
     flex-direction: row;
@@ -264,8 +278,4 @@ div.content-column {
         flex-direction: column;
         padding: 25px;
     }
-}
-
-img.profile-photo {
-    margin-top: 1.5rem;
 }

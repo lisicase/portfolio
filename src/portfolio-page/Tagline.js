@@ -2,10 +2,10 @@
 import React, { Component } from 'react';
 // Style
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css';
+import '../style.css';
 // Assets
-import ResumePM from './documents/ElisabethCase-PM-Resume.pdf';
-import ResumeSWE from './documents/ElisabethCase-SWE-Resume.pdf';
+import ResumePM from '../documents/ElisabethCase-PM-Resume.pdf';
+import ResumeSWE from '../documents/ElisabethCase-SWE-Resume.pdf';
 
 class Tagline extends Component {
   render() {

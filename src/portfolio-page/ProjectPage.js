@@ -2,8 +2,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 // Style
-import './style.css';
-// Assets
+import '../style.css';
 
 class ProjectPage extends Component {
   constructor(props){

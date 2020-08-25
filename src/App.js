@@ -5,11 +5,10 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 // Components
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import PortfolioCards from './PortfolioCards.js';
-import Tagline from './Tagline.js';
-import ProjectPage from './ProjectPage.js';
+import Navigation from './Navigation.js';
+import PortfolioCards from './portfolio-page/PortfolioCards.js';
+import Tagline from './portfolio-page/Tagline.js';
+import ProjectPage from './portfolio-page/ProjectPage.js';
 import About from './About.js';
 // Assets
 import { FaEnvelopeSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
@@ -21,14 +20,11 @@ class App extends Component {
 
     return (
       <>
-      <NavBar />
+      <Navigation />
       <Switch>
         <Route exact path="/portfolio" render={renderPortfolio} />
-        <Route exact path="/portfolio/portfolio" render={renderPortfolio} />
         <Route path="/experience" component={Experience} />
-        <Route path="/portfolio/experience" component={Experience} />
         <Route path="/about" component={About} />
-        <Route path="/portfolio/about" component={About} />
         <Route path="/portfolio/:projectId" render={renderProject} />
         <Redirect to="/portfolio" />
       </Switch>
@@ -41,24 +37,9 @@ class App extends Component {
 class Experience extends Component {
   render() {
     return (
-      <p>My Experience page is currently in progress. Thank you for your patience! :)</p>
-    );
-  }
-}
-
-class NavBar extends Component {
-  render() {
-    return (
-      <header>
-        <Navbar>
-          <Navbar.Brand href="#/"><h1 className="nav-name">ELISABETH (LISI) CASE</h1></Navbar.Brand>
-          <Nav className="mr-auto">
-            <Nav.Link href="#/portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#/experience">Experience</Nav.Link>
-            <Nav.Link href="#/about">About</Nav.Link>
-          </Nav>
-        </Navbar>
-      </header>
+      <div className="container text-center">
+        <p>My Experience page is currently in progress. Thank you for your patience! :)</p>
+      </div>
     );
   }
 }
@@ -68,12 +49,12 @@ class Footer extends Component {
     return (
       <footer>
         <div className="container text-center">
-            <p>
-              <a href="mailto:casee@uw.edu"><FaEnvelopeSquare className="contact-icon" size="24" /></a>
-              <a href="https://linkedin.com/in/elisabethcase"><FaLinkedin className="contact-icon" size="24" /></a>
-              <a href="https://github.com/lisicase"><FaGithubSquare className="contact-icon" size="24" /></a>
-            </p>
-            <p>Copyright &copy; 2020. All rights reserved.</p>
+          <p>
+            <a href="mailto:casee@uw.edu"><FaEnvelopeSquare className="contact-icon" size="24" /></a>
+            <a href="https://linkedin.com/in/elisabethcase"><FaLinkedin className="contact-icon" size="24" /></a>
+            <a href="https://github.com/lisicase"><FaGithubSquare className="contact-icon" size="24" /></a>
+          </p>
+          <p>Copyright &copy; 2020. All rights reserved.</p>
         </div>
       </footer>
     );

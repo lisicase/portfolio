@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 // Style
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css';
+import '../style.css';
 
 class PortfolioCards extends Component {
   render() {
